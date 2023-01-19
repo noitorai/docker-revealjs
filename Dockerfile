@@ -10,4 +10,4 @@ RUN git clone https://github.com/hakimel/reveal.js.git
 RUN cd /reveal.js && npm install
 
 WORKDIR /reveal.js
-CMD ["npm", "start"]
+CMD ["npm", "start", "--", "--host", "0.0.0.0"]
